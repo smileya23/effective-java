@@ -20,5 +20,5 @@
     + 해결법 : callback은 weak reference만 저장하라 
 
 #### java gc에 대해 더 읽어볼만한 글들 
-* [Java Garbage Collection] (http://d2.naver.com/helloworld/1329)
-* [Java Reference와 GC] (http://d2.naver.com/helloworld/329631)
+* [Java Garbage Collection](http://d2.naver.com/helloworld/1329)
+* [Java Reference와 GC](http://d2.naver.com/helloworld/329631)

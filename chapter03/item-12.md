@@ -8,9 +8,8 @@ Comparable Interface
 public interface Comparable<T> {
 	int compareTo(T t)
 }
-
-
 ```
+
 ### compareTo 메서드의 생성 규약
 
 비교대상 > 대상 => 음수

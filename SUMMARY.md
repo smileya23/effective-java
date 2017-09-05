@@ -10,6 +10,7 @@
   * [Item 09](chapter03/9.md)
   * [Item 10](item-10.md)
   * [Item 11](chapter03/item-11.md)
+  * [Item 12](chapter03/item-12.md)
 * [CHAPTER 04](chapter04/README.md)
   * [Item 14](chapter04/item-14.md)
   * [Item 13](chapter04/item-13.md)

@@ -1,4 +1,4 @@
-## 15 변경 가능성을 최소화하라
+## Item 15. 변경 가능성을 최소화하라
 
 ### Immutable Class
 ㄴ String, 기본 자료형 클래스, BigInteger, BigDecimal 등

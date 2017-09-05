@@ -1,8 +1,8 @@
 ## Item 13. 클래스와 멤버의 접근 권한은 최소화하라
 
-잘 설계된 모듈은 구현 세부사항을 잘 감추느냐의 여부다. 이를 정보은닉\(imformation hiding\) 또는 캡슐화\(encapsulation\)이라 한다. 
+잘 설계된 모듈은 구현 세부사항을 잘 감추느냐의 여부다. 이를 정보은닉\(imformation hiding\) 또는 캡슐화\(encapsulation\)이라 한다.
 
-결론먼저 말하면, public static final을 제외한 어떤 필드로 public으로 만들지 마라. 
+결론먼저 말하면, public static final을 제외한 어떤 필드로 public으로 만들지 마라.
 
 그리고 public static final 필드가 참조하는 객체는 변경 불가능 객체로 만들어라.
 
@@ -21,7 +21,7 @@
 
 * private - 선언된 최상위 레벨 클래스 내부에서만 접근 가능
 * package-privates - 같은 패키지 내의 아무 클래스나 사용 가능 
-* protected - 선언된 클래스 및 그 하위 클래스만 사용
+* protected - 같은패키지, 선언된 클래스 및 그 하위 클래스만 사용
 * public - 어디서나 사용 가능
 
 #### 이런 건 절대 하지 마라!

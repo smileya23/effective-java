@@ -1,4 +1,4 @@
-## 12 Comparable 구현을 고려하라.
+## Item 12. Comparable 구현을 고려하라.
 
 Comparable Interface
 _동치성 검사 & 순서비교가 가능_

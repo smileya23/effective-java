@@ -8,8 +8,8 @@
 * [CHAPTER 03](chapter03/README.md)
   * [Item 08](chapter03/item-08.md)
   * [Item 09](chapter03/9.md)
+  * [Item 10](item-10.md)
   * [Item 11](chapter03/item-11.md)
 * [CHAPTER 04](chapter04/README.md)
   * [Item 14](chapter04/item-14.md)
-
 

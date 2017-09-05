@@ -12,4 +12,5 @@
   * [Item 11](chapter03/item-11.md)
 * [CHAPTER 04](chapter04/README.md)
   * [Item 14](chapter04/item-14.md)
+  * [Item 13](chapter04/item-13.md)
 

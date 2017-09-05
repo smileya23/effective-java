@@ -39,5 +39,6 @@ null로 받을 경우 compareTo 메서드는 반드시 NullPointerException 발�
 객체 참조 필드는 compareTo 메서드를 재귀적으로 호출하여 비교한다
 Comparable을 구현하지 않고 있거나 좀 특이한 순서 관계를 사용해야할 경우 Comparator를 명시적으로 사용할 수 있다.
 
-equals
-Comparator
+* Comparable vs equals
+* Comparable vs Comparator 
+ - http://developer88.tistory.com/75

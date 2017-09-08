@@ -55,7 +55,7 @@ s.addAll(Arrays.asList("Snap", "Crackle", "Pop"));
 
 * 구성\(composition\) - 위 언급된 문제를 피하는 방법은, 계승 대신 새로운 객체에 기존 클래스 객체를 참조하는 private 필드를 만드는 것!
 * 전달\(forwarding\) - 기존 클래스의 메소드를 호출하여 그 결과를 반환하는 것!
-* 전달 클래스
+* 재사용 가능한 전달 클래스
 
   ```
   public class ForwardingSet<E> implements Set<E> {

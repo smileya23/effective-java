@@ -16,4 +16,5 @@
   * [Item 14](chapter04/item-14.md)
   * [Item 15](chapter04/item-15.md)
   * [Item 16](item-16.md)
+  * [Item 17](chapter04/item-17.md)
 

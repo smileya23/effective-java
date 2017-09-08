@@ -9,9 +9,7 @@ override가능한 메서드의 경우, 메서드 주석 마지막에 override에
     ```
     public abstract class AbstractCollection<E> implements Collection<E> {
         public abstract Iterator<E> iterator();
-
-        ....
-
+        
         /**
          * {@inheritDoc}
          *
@@ -38,6 +36,9 @@ override가능한 메서드의 경우, 메서드 주석 마지막에 override에
     + => iterator method를 재정의 하면 remove가 영향을 받는다 
 
 cf. *상속은 캡슐화의 원칙을 침해한다*
+
+
+***
 
 
 ### 상속을 위한 설계 
@@ -78,37 +79,38 @@ cf. *상속은 캡슐화의 원칙을 침해한다*
 * 인스턴스 생성시 호출 순서 : 상위 클래스 생성자 -> 하위 클래스 생성자 
     + 그래서 명시적으로 super(); 를 하기도 하는군... 
 * override한 메서드가 하위 클래스 생성자 내 로직에 의존이 있을 경우, 에러 발생 
-* ex.
-```
-public class Super {
-    public Super() {
-        overrideMe();
-    }
-    public void overrideMe() {
-    }
-}
-
-public final class Sub extends Super {
-    private final Date date;
-
-    Sub() {
-        // super();
-        date = new Date();
+* ex.   
+    ```
+    public class Super {
+        public Super() {
+            overrideMe();
+        }
+        public void overrideMe() {
+        }
     }
 
-    @Override
-    public void overrideMe() {
-        System.out.println(date);
-    }
+    public final class Sub extends Super {
+        private final Date date;
 
-    public static void main(String[] args) {
-        Sub sub = new Sub();
-        sub.overrideMe();
-        // null
-        // Fri Sep 08 10:26:05 KST 2017
+        Sub() {
+            // super();
+            date = new Date();
+        }
+
+        @Override
+        public void overrideMe() {
+            System.out.println(date);
+        }
+
+        public static void main(String[] args) {
+            Sub sub = new Sub();
+            sub.overrideMe();
+            // null
+            // Fri Sep 08 10:26:05 KST 2017
+        }
     }
-}
-```
+    ```
+
     + Super() -> overrideMe 호출 
     + Sub.overrideMe 실행 
     + Sub() -> date set 
@@ -119,6 +121,9 @@ public final class Sub extends Super {
 * 상속받은 하위 클래스에 너무 큰 책임이 몰림 
 * 굳이 쓴다면, 생성자와 비슷하게 동작하는 clone/readObject 메서드는 override가능한 메서드를 호출하지 않도록 
 * 굳이 쓰고, readResolve/writeReplace 메서드가 있다면, protected로 선언해야함 => private일 경우 하위 클래스에서 해당 메서드를 무시 (???)
+
+
+***
 
 
 ### 테스트 

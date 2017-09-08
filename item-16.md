@@ -40,6 +40,7 @@ s.addAll(Arrays.asList("Snap", "Crackle", "Pop"));
 ```
 
 * 3건을 추가하면 size가 3일 것 같지만 놉. HashSet의 addAll이 내부적으로 add를 이용해서 구현하기 때문.
+
   * InstrumentedHashSet의 addAll\(\) 메소드 호출하여 집계. addCount=3
   * HashSet의 addAll\(\)을 호출. HashSet의 메서드는 합입할 원소마다 add 메서드 호출
   * InstrumentedHashSet의 add를 3번 호출. addCount=6
@@ -64,11 +65,11 @@ s.addAll(Arrays.asList("Snap", "Crackle", "Pop"));
           this.s = s;
       }
 
-      public void clear() {
-          s.clear();
+      public boolean add(E e) {
+          return s.add(e);
       }
-      public boolean contains(Object o) {
-          return s.contains(o);
+      public boolean addAll(Collection<? extends E> c) {
+          return s.addAll(c);
       }
       public boolean isEmpty() {
           return s.isEmpty();

@@ -79,14 +79,13 @@ cf. *상속은 캡슐화의 원칙을 침해한다*
 * 인스턴스 생성시 호출 순서 : 상위 클래스 생성자 -> 하위 클래스 생성자 
     + 그래서 명시적으로 super(); 를 하기도 하는군... 
 * override한 메서드가 하위 클래스 생성자 내 로직에 의존이 있을 경우, 에러 발생 
-* ex.   
+* ex. test
     ```
     public class Super {
         public Super() {
             overrideMe();
         }
-        public void overrideMe() {
-        }
+        public void overrideMe() {}
     }
 
     public final class Sub extends Super {
@@ -110,7 +109,6 @@ cf. *상속은 캡슐화의 원칙을 침해한다*
         }
     }
     ```
-
     + Super() -> overrideMe 호출 
     + Sub.overrideMe 실행 
     + Sub() -> date set 

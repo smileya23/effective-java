@@ -1,10 +1,11 @@
 ## Item 21. 전략을 표현하고 싶을 때는 함수 객체를 사용하라
 
-### 전략패턴(Strategy Pattern)
-### 함수 객체(function object)
-### 실행 가능 전략(concrete stragety)
-### stateless class 
-### 싱글턴 패턴(singleton pattern)
+#### 전략패턴(Strategy Pattern)
+#### 함수 객체(function object)
+#### 실행 가능 전략(concrete stragety)
+#### stateless class 
+#### 싱글턴 패턴(singleton pattern)
+
 ```
 class Host{
     private static class StrLenCmp 

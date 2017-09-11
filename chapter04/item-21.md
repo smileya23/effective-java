@@ -1,6 +1,8 @@
 ## Item 21. 전략을 표현하고 싶을 때는 함수 객체를 사용하라
 
 #### 전략패턴(Strategy Pattern)
+
+* 참고)) http://kimsunzun.tistory.com/entry/Strategy%EC%A0%84%EB%9E%B5-%ED%8C%A8%ED%84%B4
 #### 함수 객체(function object)
 #### 실행 가능 전략(concrete stragety)
 #### stateless class 

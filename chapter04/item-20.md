@@ -1,5 +1,5 @@
 ## Item 20. 태그 달린 클래스 대신 클래스 계층을 활용하라
-태그 달린 클래스...?   
+*태그 달린 클래스...?*  
 => 태그 필드가 있는 클래스  
 => 태그 필드 : 인스턴스의 형태 지정 
 
@@ -42,6 +42,10 @@ class Figure {
                 thorw new AssertionError();
         }
     }
+
+    boolean isFigure() {
+        return true;
+    }
 }
 ```
 
@@ -64,10 +68,20 @@ class Figure {
     ```
     abstract class Figure {
         abstract double area();
+        
+        boolean isFigure() {
+            return true;
+        }
     }
     ```
 2. 1의 추상 클래스에 태그 필드 값에 좌우되지 않는 메서드/필드 추가 
-    * 
+    * isFigure()
+    * ex.  
+    ```
+    abstract class Figure {
+        abstract double area();
+    }
+    ```
 3. 태그 필드에 맞춰 동작하는 기능을 추상 클래스의 하위 클래스로 정의 
     * Rectangle, Circle class
     * ex.  
@@ -121,3 +135,8 @@ class Figure {
         }
     }
     ```
+
+### subtyping의 장점은?
+1. 태그 기반 클래스의 문제를 해결 
+2. 태그 값들의 계층 관계도 반영 가능
+    * ex. Rectangle - Sqaure 

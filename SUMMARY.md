@@ -19,4 +19,5 @@
   * [Item 17](chapter04/item-17.md)
   * [Item 18](chapter04/item-18.md)
   * [Item 19](chapter04/item-19.md)
+  * [Item 19](chapter04/item-20.md)
 

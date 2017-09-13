@@ -22,4 +22,6 @@
   * [Item 20](chapter04/item-20.md)
   * [Item 21](chapter04/item-21.md)
   * [Item 22](chapter04/item-22-re.md)
+* [CHAPTER 05](chapter-05.md)
+* [Item 24](item-24.md)
 

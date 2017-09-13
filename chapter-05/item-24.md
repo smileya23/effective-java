@@ -1,4 +1,4 @@
-##Item 24. 무저검 경고(unchecked warning)를 제거하라
+##Item 24. 무점검 경고(unchecked warning)를 제거하라
 ###제네릭프로그램시 컴파일러 경고 메시지 
 
 ###컴파일러 경고 메시지 

@@ -25,4 +25,5 @@
 * [CHAPTER 05](chapter05/README.md)
   * [Item 23](chapter05/item-23.md)
   * [Item 24](chapter05/item-24.md)
+  * [Item 25](chapter05/item-25.md)
 

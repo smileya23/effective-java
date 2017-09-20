@@ -2,8 +2,6 @@
 
 배열과 제네릭을 뒤섞어 쓰다가 컴파일 오류나 경고메시지를 만나게되면, 배열을 리스트로 바꿔야겠다는 생각이 본능적으로 들어야 한다.!!
 
-
-
 #### 배열과 리스트의 차이점
 
 1. 배열은 공변 자료형\(covariant\), 리스트는 불변 자료형\(sivariant\)
@@ -15,8 +13,7 @@
    * 가장 큰 차이점! 배열 사용하여 에러나는 경우는 런타임 시 그 내용을 알 수 있고, Generic을 사용하여 에러가 발생하는 경우는 컴파일 시 내용을 알 수 있어 더 빠른 시점에 알 수 있다.
 
      ```
-     Object[] objectArray = new Long[1];  
-     //ArrayStoreException 예외 발생
+     Object[] objectArray = new Long[1];  //ArrayStoreException 예외 발생
      objectArray[0] = "I don't fit in";
      ​
      //컴파일 되지 않는 코드

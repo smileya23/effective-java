@@ -2,6 +2,8 @@
 
 배열과 제네릭을 뒤섞어 쓰다가 컴파일 오류나 경고메시지를 만나게되면, 배열을 리스트로 바꿔야겠다는 생각이 본능적으로 들어야 한다.!!
 
+
+
 #### 배열과 리스트의 차이점
 
 1. 배열은 공변 자료형\(covariant\), 리스트는 불변 자료형\(sivariant\)
@@ -18,15 +20,7 @@
      objectArray[0] = "I don't fit in";
      ​
      //컴파일 되지 않는 코드
-     List
-     <
-     Object
-     >
-      ol = new ArrayList
-     <
-     Long
-     >
-     ();  
+     List <Object> ol = new ArrayList<Long>();  
      ol.add("I don't fit in");
      ```
 
@@ -36,32 +30,16 @@
 
    * 리스트는 컴파일 시점에만 자료형에 대한 조건들이 적용됨. 즉, 실제 실행할 때는 자료형에 대한 정보가 사라진다. 자료형 삭제덕에, 리스트 자료형은 Generic을 사용하지 않고 작성된 오래된 코드와도 문제없이 연동됨. \(규칙23..\)
 
-
+#### 
 
 #### 그리하여, 저 둘은 섞어 쓰기 어렵다.
 
 ```
-List
-<
-String
->
-[] stringLists = new List
-<
-String
->
-[1];  // (1)
-List
-<
-Integer
->
- intList = Arrays.asList(42); 
- // (2)
-Object[] objects = stringLists; 
-  // (3)
-objects[0] = intList; 
-  // (4)
-String s = stringLists[0].get(0); 
-  // (5)
+List<String>[] stringLists = new List<String>[1];  // (1)
+List<Integer> intList = Arrays.asList(42); // (2)
+Object[] objects = stringLists; // (3)
+objects[0] = intList;  // (4)
+String s = stringLists[0].get(0); // (5)
 ```
 
 1. 컴파일 안되지만, 일단 된다고 가정해보자 \(제네릭 배열은 만들 수 없ㅇ ㅓ!!\)
@@ -75,37 +53,4 @@ String s = stringLists[0].get(0);
 5. 꺼낸 자료형을 자동적으로 String으로 변환. 사실은 integer이므로 프로그램 실행 도중에 ClassCastException 발생.
 
 -&gt; 이런 일을 막으려면 \(1\) 처럼 제네릭 배열을 만들려고 하면 컴파일 할 때 오류가 발생해야 함.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
 

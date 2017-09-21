@@ -26,5 +26,5 @@
   * [Item 23](chapter05/item-23.md)
   * [Item 24](chapter05/item-24.md)
   * [Item 25](chapter05/item-25.md)
-  * [Item 25](chapter05/item-26.md)
+  * [Item 26](chapter05/item-26.md)
 

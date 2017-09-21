@@ -1,5 +1,6 @@
 ## Item 26. 가능하면 제네릭 자료형으로 만들 것 
 ### 클래스를 제네릭화 하기 
+
 ```
 public class Stack {
     private Object[] elements;

@@ -1,16 +1,20 @@
-#### 비트 필드  {#as-is}
+### Item 32. 비트 필드\(bit field\) 대신 EnumSet을 사용하라.
+
+#### 비트 필드 {#as-is}
 
 > public class Text{
 >
->             public static final int STYLE\_BOLD = 1 &lt;&lt; 0 ; // 1
+> ```
+>         public static final int STYLE\_BOLD = 1 &lt;&lt; 0 ; // 1
 >
->             public static final int STYLE\_ITALIC = 1 &lt;&lt; 1 ; //2
+>         public static final int STYLE\_ITALIC = 1 &lt;&lt; 1 ; //2
 >
->             public static final int STYLE\_UNDERLINE = 1 &lt;&lt; 2 // 4
+>         public static final int STYLE\_UNDERLINE = 1 &lt;&lt; 2 // 4
 >
->             public static final int STYLE\_STRIKETHROUGH = 1&lt;&lt; 3 //8
+>         public static final int STYLE\_STRIKETHROUGH = 1&lt;&lt; 3 //8
 >
->             public void applyStyle\(int style\) {....}  //비트별 OR 한 값이거나 0
+>         public void applyStyle\(int style\) {....}  //비트별 OR 한 값이거나 0
+> ```
 >
 > }
 >
@@ -30,11 +34,13 @@
 
 > public class Text {
 >
->      public enum Style { BOLD , ITALIC , UNDERLINE, STRIKETHROUGH }
+> ```
+>  public enum Style { BOLD , ITALIC , UNDERLINE, STRIKETHROUGH }
 >
->      public void applyStyles\(Set&lt;Style&gt; styles\){...}
+>  public void applyStyles\(Set&lt;Style&gt; styles\){...}
 >
->     text.applyStyles\(EnumSet.of\(Style.BOLD, Style.ITALIC\)\);
+> text.applyStyles\(EnumSet.of\(Style.BOLD, Style.ITALIC\)\);
+> ```
 >
 > }
 
@@ -56,9 +62,6 @@
 
 * 자바 1.6에서는 immutable EnumSet 객체를 만들 수 없음 =&gt;
   Collections.unmodifiableSet으로 포장하거나, Guava 라이브러리\(Google\) 사용으로 해결
-
-  
-
 
 
 

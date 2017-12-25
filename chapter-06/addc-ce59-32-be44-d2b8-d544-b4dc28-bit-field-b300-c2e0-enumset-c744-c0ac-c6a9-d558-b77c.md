@@ -5,7 +5,7 @@
 > public class Text{
 >
 > ```
->         public static final int STYLE\_BOLD = 1 &lt;&lt; 0 ; // 1
+>         public static final int STYLE_BOLD = 1 << 0 ; // 1
 >
 >         public static final int STYLE\_ITALIC = 1 &lt;&lt; 1 ; //2
 >

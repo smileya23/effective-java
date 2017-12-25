@@ -55,7 +55,7 @@
 * `Set`인터페이스를 구현하기 때문에`Set`의 기능 제공
 * 형 안전성, 다른 Set 구현들과 같은 수준의 상호운용성\(interoperability\) 제공
 * 내부적으로 bit vector 사용
-  * enum 갯수가 64 이하인 경우`EnumSet`은 long 값 하나만 사용. 그러므로, 비트 필드에 필적하는 성능이 나옴.
+  * enum 갯수가 64 이하인 경우`EnumSet`은 long 값 하나만 사용 =&gt; 비트 필드에 필적하는 성능이 나옴.
   * `removeAll()`이나`retainAll()`같은 일괄 연산도 비트 단위 산술 연산을 통해 구현
 
 **단점**

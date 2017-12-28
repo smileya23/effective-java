@@ -27,7 +27,7 @@
   * [Item 24](chapter05/item-24.md)
   * [Item 25](chapter05/item-25.md)
   * [Item 26](chapter05/item-26.md)
-* [CHAPTER 06](chapter-06.md)
-  * [Item 32](chapter-06/addc-ce59-32-be44-d2b8-d544-b4dc28-bit-field-b300-c2e0-enumset-c744-c0ac-c6a9-d558-b77c.md)
-  * [Item 30](item-30.md)
+* [CHAPTER 06](chapter06/README.md)
+  * [Item 32](chapter06/addc-ce59-32-be44-d2b8-d544-b4dc28-bit-field-b300-c2e0-enumset-c744-c0ac-c6a9-d558-b77c.md)
+  * [Item 30](chapter06/item-30.md)
 

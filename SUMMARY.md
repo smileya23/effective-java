@@ -32,4 +32,5 @@
   * [Item 30](chapter06/item-30.md)
   * [Item 34](chapter06/item-34.md)
   * [Item 35](chapter06/item-35.md)
+  * [Item 38](chapter06/item-38.md)
 

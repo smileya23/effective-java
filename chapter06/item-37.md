@@ -7,8 +7,6 @@
 ```
 public interface Serializable {
 }
-
-Serializable.java
 ```
 
 

@@ -12,7 +12,7 @@
 
 ### maker interface vs maker annotation
 
-* \(+\) interface는 자료형, annotaion은 그렇지 않다 
+* \(+\) interface는 자료형, annotation은 그렇지 않다 
   * 에러를 컴파일 시점에 확인 가능 \(checkedException\)
   * ex. java.io.ObjectOutputStream
     ```

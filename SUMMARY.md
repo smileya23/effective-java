@@ -33,6 +33,7 @@
   * [Item 33](chapter06/item-33.md)
   * [Item 34](chapter06/item-34.md)
   * [Item 35](chapter06/item-35.md)
+  * [Item 36](item-36.md)
   * [Item 37](chapter06/item-37.md)
   * [Item 38](chapter06/item-38.md)
 

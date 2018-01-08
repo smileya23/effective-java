@@ -14,7 +14,7 @@
 >   ```
 >    인자 유효성이 위반되었을 경우에 발생하는예외를 Javadoc의 @throws 태그를 사용 
 >
->    보통 IllegalArgumentException, IndexOutOfBoundsException, NullPointerException이 이용된다. 
+>    보통 IllegalArgumentException, IndexOutOfBoundsException, NullPointerException이 이용된다.
 >   ```
 >
 > * public 이 아닌 메서드
@@ -26,11 +26,11 @@
 >
 >      - 활성화하지 않은 확정문은 실행되지 않는다. 
 >
->        \(활성화 java 인터프리터에 -ea\( - enableassertions\) 옵션 주어야한다\)
+>        (활성화 java 인터프리터에 -ea( - enableassertions) 옵션 주어야한다)
 >
 >   // 재귀적으로정렬하는 private 도움함수
 >
->      private static void sort\(long a\[\], int offset, int length\) {
+>      private static void sort(long a[], int offset, int length) {
 >
 >       assert a != null;
 >

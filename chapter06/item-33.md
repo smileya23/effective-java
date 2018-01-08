@@ -1,7 +1,5 @@
 ## Item 33. ordinal을 배열 첨자로 사용하는 대신 EnumMap을 이용하라
 
-
-
 * ordinal을 사용해 여러 자바 자료구조와 Enum형을 맵핑시키면 안된다
 
   * 형 안전성을 제공하지 못하고, index를 넘길 경우 ArrayIndexOutOfBoundsExceptoin을 만들 수 있기 때문
@@ -27,11 +25,10 @@
            return name;
        }
 
-
        public static void main(String[] args) {
-           //이런 짓은 곤란합니다..
+           //이런 짓은 곤란합니다
            Herb[] garden = { new Herb("Basil", Type.ANNUAL),
-                          new Herb("Carroway", Type.BIENNIAL),
+                           new Herb("Carroway", Type.BIENNIAL),
                            new Herb("Dill", Type.ANNUAL),
                            new Herb("Lavendar", Type.PERENNIAL),
                            new Herb("Parsley", Type.BIENNIAL),
@@ -56,7 +53,6 @@
            System.out.println(herbsByType);
        }
   }
-
   ```
 
 * new EnumMap&lt;Type, Set&lt;Herb&gt;&gt;\(Herb.Type.class\)

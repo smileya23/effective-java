@@ -4,9 +4,9 @@
 - enum types가 모든 면에서 우월.
 - 그러나 enum types의 경우 확장성이 없음 (extends 불가)
 - 불편하긴 하지만... 확장 가능한 enum이 꼭 필요한 것이냐?
-    + (-) ???
-    + (-) ???
-    + (-) ???
+    + (-) 오버라이딩은 되지만 오버로딩은 안되니깐. 혼란스러움...? 
+    + (-) base enum과 확장 enum의 모든 상수를 확인하기 어려움 
+    + (-) 설계, 구현의 까다로움 
     + (+) 사용자가 확장하여 사용할 때는 필요 ex. 연산 코드
 
 ### 인터페이스를 활용해 enum을 구현 
@@ -73,5 +73,9 @@ public enum BasicOperation implements ExtensibleOperation {
 ```
 - 새로운 연산이 필요하다면, extensibleOperation 인터페이스를 구현하여 새로운 enum을 작성하면 됨 
 - API에는 인터페이스를 공유하면, 새로 구현한 enum들도 사용 가능.
+    + bounded type token
+    + bounded wildcard type
+        * The resulting code is a bit less complex, and the test method is a bit more flexible
+        * 그러나 enumSet, enumMap을 활용할 수 없으므로, 엄청난 확장설이 필요한 것이 아니면 bounded type token 을 사용하자 
 - (-) enum 자체를 상속받는게 아니기 때문에, 중복 코드가 발생할 수 있음 (생성자, toString 같은 메서드)
     + 중복되는 코드가 많다면, helper class나 static helper method를 사용하자 

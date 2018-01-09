@@ -2,12 +2,13 @@
 ### method signiture
 > Definition: Two of the components of a method declaration comprise the method signature—the method's name and the parameter types.
 
-[https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html]
+https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html  
 즉, 메서드 이름과 파라미터에 대한 이야기이다,,,
 
 ### 메서드 이름
 메서드 이름은 컨벤션을 따라주라. (규칙 56)
-- 목표 
+
+#### 목표 
 1. 이해가 쉬움
 2. 같은 패키지 내 다른 이름들과 일관성 유지 
 3. 관습적인 네이밍에 맞게 
@@ -21,8 +22,7 @@
 ### parameter 
 #### paramter list는 짧게
 가급적 4개 이하가 좋고, 인자의 자료형이 다른 것이 좋다. (요즘은 IDE가 워낙 좋아서,,,)
-- paramter list를 줄이는 방법 
-
+##### paramter list를 줄이는 방법 
 1. 여러 메서드로 나눠라 (orthgonality)
     - ex. (I) java.util.List
         - subList의 first/last index를 return 하는 메서드는 없다 (methods to find the first or last index of an element in a sublist)
@@ -37,6 +37,7 @@
 - 그래도 뭔소리야,,,
 - https://stackoverflow.com/questions/13954672/adapting-the-builder-pattern-for-method-invocation
 - https://stackoverflow.com/questions/2432443/best-practice-for-passing-many-arguments-to-method
+
 
 #### paramter type은 클래스보단 가급적 인터페이스로 
 특정 클래스에 종속될 필요는 없음 

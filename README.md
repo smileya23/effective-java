@@ -9,3 +9,5 @@
 {% include "./chapter05/README.md" %}
 
 {% include "./chapter06/README.md" %}
+
+{% include "./chapter07/README.md" %}

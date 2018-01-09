@@ -33,10 +33,10 @@ https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html
 여러 메서드에 자주 등장하는 parameter들은 별도 entity로 만듦 
 
 3. builder pattern 응용
-- builder pattern(규칙 2)을 복습해본다 
-- 그래도 뭔소리야,,,
-- https://stackoverflow.com/questions/13954672/adapting-the-builder-pattern-for-method-invocation
-- https://stackoverflow.com/questions/2432443/best-practice-for-passing-many-arguments-to-method
+    + builder pattern(규칙 2)을 복습해본다 
+    + 그래도 뭔소리야,,,
+    + https://stackoverflow.com/questions/13954672/adapting-the-builder-pattern-for-method-invocation
+    + https://stackoverflow.com/questions/2432443/best-practice-for-passing-many-arguments-to-method
 
 
 #### paramter type은 클래스보단 가급적 인터페이스로 

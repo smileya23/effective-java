@@ -30,7 +30,7 @@ https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html
         - subList(int fromIndex, int toIndex) + indexOf(Object o)/lastIndexOf(Object o)
 
 2. helper class를 만들어, parameter를 그룹화 하라 
-여러 메서드에 자주 등장하는 parameter들은 별도 entity로 만듦 
+    - 여러 메서드에 자주 등장하는 parameter들은 별도 entity로 만듦 
 
 3. builder pattern 응용
     + builder pattern(규칙 2)을 복습해본다 

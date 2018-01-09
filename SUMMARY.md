@@ -38,3 +38,5 @@
   * [Item 38](chapter06/item-38.md)
 * [CHAPTER 07](chapter07/README.md)
   * [Item 40](chapter07/item-40.md)
+  * [Item 41](chapter07/item-41.md)
+

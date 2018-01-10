@@ -1,6 +1,8 @@
 ## Item 39. 필요하다면 방어적 복사본을 만들라
 
-* 자바가 안전한 이유는, 네이티브 메서드를 사용하지 않으면 메모리 훼손 오류가 생기지 않는다. \(C, C++은 빈번히 발생\)
+* 자바는 안전한 언어이다.....이유가 어렵다.
+
+  * This means that in the absence of native methods it is immune to buffer overruns, array overruns, wild pointers, and other memory corruption errors that plague unsafe languages such as C and C++
 
 * 하지만, 안전하다 해도 완전한 자유는 아닌데, 클라이언트가 불변식\(invariant\)를 망가뜨리기 위해 최선을 다할 거라는 가정하에, 최대한 방어적으로 프로그래밍 해야한다.
 

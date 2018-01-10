@@ -22,7 +22,7 @@ public final class Period {
   */
  public Period(Date start, Date end) {
   if (start.compareTo(end) >0)
- throw new IllegalArgumentException(start + " after " + end);
+     throw new IllegalArgumentException(start + " after " + end);
   this.start = start;
   this.end = end;
  }

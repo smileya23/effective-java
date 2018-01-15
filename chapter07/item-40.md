@@ -7,6 +7,21 @@
 [https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html](https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html)  
 즉, 메서드 이름과 파라미터에 대한 이야기이다,,,
 
+cf. method declarations
+```
+public double calculateAnswer(double wingSpan, int numberOfEngines,
+                              double length, double grossTons) {
+    //do the calculation here
+}
+```
+
+1. Modifiers : such as public, private, and others you will learn about later.
+2. The return type : the data type of the value returned by the method, or void if the method does not return a value.
+3. The method name : the rules for field names apply to method names as well, but the convention is a little different.
+4. The parameter list in parenthesis : a comma-delimited list of input parameters, preceded by their data types, enclosed by parentheses, (). If there are no parameters, you must use empty parentheses.
+5. An exception list
+6. The method body : the method's code, including the declaration of local variables, goes here.
+
 ### 메서드 이름
 
 메서드 이름은 컨벤션을 따라주라. \(규칙 56\)
@@ -25,11 +40,11 @@
 
 ### parameter
 
-#### paramter list는 짧게
+#### parameter list는 짧게
 
 가급적 4개 이하가 좋고, 인자의 자료형이 다른 것이 좋다. \(요즘은 IDE가 워낙 좋아서,,,\)
 
-##### paramter list를 줄이는 방법
+##### parameter list를 줄이는 방법
 
 1. 여러 메서드로 나눠라 \(orthgonality\)
 
@@ -45,9 +60,12 @@
 3. builder pattern 응용
 
    * builder pattern\(규칙 2\)을 복습해본다 
-   * 그래도 뭔소리야,,,
    * [https://stackoverflow.com/questions/13954672/adapting-the-builder-pattern-for-method-invocation](https://stackoverflow.com/questions/13954672/adapting-the-builder-pattern-for-method-invocation)
    * [https://stackoverflow.com/questions/2432443/best-practice-for-passing-many-arguments-to-method](https://stackoverflow.com/questions/2432443/best-practice-for-passing-many-arguments-to-method)
+   ```
+   XXXParameter param = new XXXParameter(objA, objB, date1, date2, str1, str2);
+   XXXParameter class에 builder패턴 적용 
+   ```
 
 #### paramter type은 클래스보단 가급적 인터페이스로
 

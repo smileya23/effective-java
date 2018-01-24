@@ -8,5 +8,7 @@
 
 * [규칙 41. 오버라이딩 할 때는 주의하라](/chapter07/item-41.md)
 
+* [규칙 42. varargs는 신중히 사용하](/chapter07/item-42.md)
+
 
 

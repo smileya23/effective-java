@@ -40,4 +40,5 @@
   * [Item 39](chapter07/item-39.md)
   * [Item 40](chapter07/item-40.md)
   * [Item 41](chapter07/item-41.md)
+  * [Item 42](chapter07/item-42.md)
 

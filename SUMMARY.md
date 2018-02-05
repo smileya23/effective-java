@@ -42,4 +42,5 @@
   * [Item 41](chapter07/item-41.md)
   * [Item 42](chapter07/item-42.md)
   * [Item 43](chapter07/item-43.md)
+  * [Item 44](chapter07/item-44.md)
 

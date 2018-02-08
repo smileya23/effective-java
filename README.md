@@ -11,3 +11,5 @@
 {% include "./chapter06/README.md" %}
 
 {% include "./chapter07/README.md" %}
+
+{% include "./chapter08/README.md" %}

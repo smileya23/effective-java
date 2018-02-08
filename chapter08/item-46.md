@@ -3,56 +3,59 @@
 * for-each
     - js의 for...in + for...of
     ```
-      // array
-      for (int i = 0; i < a.length; i++) {
+    // array
+    for (int i = 0; i < a.length; i++) {
         doSomething(a[i]);
-      }
+    }
       
-      // collection
-      for (Iterator i = c.iterator(); i.hasNext(); ) { 
+    // collection
+    for (Iterator i = c.iterator(); i.hasNext(); ) { 
         doSomething((Element) i.next());
-      }
+    }
       
-      for (Element e : elements) {
+    for (Element e : elements) {
         doSomething(e);
-      }
+    }
     ```
-  - Iterable 인터페이스를 구현하는 객체면 사용 가능
+    - Iterable 인터페이스를 구현하는 객체면 사용 가능
     ```
-        public interface Iterable<E> {
-            // Returns an iterator over the elements in this iterable
-            Iterator<E> iterator();
-        }
+    public interface Iterable<E> {
+        // Returns an iterator over the elements in this iterable
+        Iterator<E> iterator();
+    }
     ```
 
 * 장점
     - index variable(4번), iterator(3번) 등장 → 다른 변수를 이용하는 실수가 있어도 컴파일 단계에서 잡기 어려움 → 이를 보완
-    - ex. 중첩 for 문
+    - ex. 중첩 for 문 
     ```
-        enum Suit { CLUB, DIAMOND, HEART, SPADE }
-        enum Rank { ACE, DEUCE, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT,
-        NINE, TEN, JACK, QUEEN, KING }
-        ...
-        Collection<Suit> suits = Arrays.asList(Suit.values());
-        Collection<Rank> ranks = Arrays.asList(Rank.values());
-        
-        List<Card> deck = new ArrayList<Card>();
-        for (Iterator<Suit> i = suits.iterator(); i.hasNext(); )
-            for (Iterator<Rank> j = ranks.iterator(); j.hasNext(); )
-                deck.add(new Card(i.next(), j.next()));
-        
-        
-        for (Iterator<Suit> i = suits.iterator(); i.hasNext(); ) {
-            Suit suit = i.next();
-            for (Iterator<Rank> j = ranks.iterator(); j.hasNext(); )
-                deck.add(new Card(suit, j.next()));
-            }
+    enum Suit { CLUB, DIAMOND, HEART, SPADE }
+    enum Rank { ACE, DEUCE, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT,
+    NINE, TEN, JACK, QUEEN, KING }
+    ...
+    Collection<Suit> suits = Arrays.asList(Suit.values());
+    Collection<Rank> ranks = Arrays.asList(Rank.values());
+    List<Card> deck = new ArrayList<Card>();
+
+    // 1단계 
+    for (Iterator<Suit> i = suits.iterator(); i.hasNext(); )
+        for (Iterator<Rank> j = ranks.iterator(); j.hasNext(); )
+            deck.add(new Card(i.next(), j.next()));
+
+    // 2단계 
+    for (Iterator<Suit> i = suits.iterator(); i.hasNext(); ) {
+        Suit suit = i.next();
+        for (Iterator<Rank> j = ranks.iterator(); j.hasNext(); )
+            deck.add(new Card(suit, j.next()));
         }
-        
-        for (Suit suit : suits)
-            for (Rank rank : ranks)
-                deck.add(new Card(suit, rank));
+    }
+    
+    // 3단계 
+    for (Suit suit : suits)
+        for (Rank rank : ranks)
+            deck.add(new Card(suit, rank));
     ```
+
 * 사용할 수 없는 경우
     - filtering
         + 단순 순회가 아닌 remove 필요

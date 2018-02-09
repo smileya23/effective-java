@@ -44,5 +44,6 @@
   * [Item 43](chapter07/item-43.md)
   * [Item 44](chapter07/item-44.md)
 * [CHAPTER 08](chapter08/README.md)
+  * [Item 45](chapter08/item-45.md)
   * [Item 46](chapter08/item-46.md)
 

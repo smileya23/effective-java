@@ -46,4 +46,5 @@
 * [CHAPTER 08](chapter08/README.md)
   * [Item 45](chapter08/item-45.md)
   * [Item 46](chapter08/item-46.md)
+  * [Item 47](chapter08/item-47.md)
 

@@ -47,4 +47,5 @@
   * [Item 45](chapter08/item-45.md)
   * [Item 46](chapter08/item-46.md)
   * [Item 47](chapter08/item-47.md)
+  * [Item 48](chapter08/item-48.md)
 

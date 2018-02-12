@@ -25,8 +25,8 @@
         } 
     };
     ```
-2. boxed primitive type의 값에는 아무 기능도 없는 값(null)이 있음 
-    - functional value
+2. boxed primitive type의 값에는 아무 기능도 없는 값(null)이 있음  
+    - 즉, primitive type의 값에 대응되지 않는 value가 있음 
     - boxed primitive type의 초기값은 null 
     ```
     // NullPointerException 발생 

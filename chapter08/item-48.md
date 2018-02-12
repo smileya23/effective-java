@@ -1,7 +1,5 @@
 ## 규칙 48. 정확한 답이 필요하다면 float와 double은 피하라
 
-
-
 * float과 double은 기본적으로 과학 또는 엔지니어링 관련 계산에 쓰일 목적,,,
 
 * 이진 부동 소수점 연산
@@ -10,12 +8,9 @@
 
 * 특히 돈과 관계된 계산에는 적합하지 않음.
 
-
-
-* 돈계산 예제 \(1달러로 10,20,30 센트의 사탕을 몇개사냐,, 거스름돈은 얼마인고,,\)
+* #### 돈계산 예제 \(1달러로 10,20,30 센트의 사탕을 몇개사냐,, 거스름돈은 얼마인고,,\)
 
   ```
-  public static void howManyCandies1() {
     double funds = 1.00;
     int itemsBought = 0;
     for (double price = .10; funds >= price; price += .10) {
@@ -31,11 +26,9 @@
   Change: $0.3999999999999999
   */
   ```
-
-* BigDecimal을 사용해 해결해버자
+* #### BigDecimal을 사용해 해결해버자
 
   ```
-  public static void howManyCandies2() {
     final BigDecimal TEN_CENTS = new BigDecimal(".10");
   ​
     int itemBought = 0;
@@ -55,11 +48,9 @@
   ```
 
   * 하지만, 기본 산술연산 자료형\(primitive arithmetic type\)보다 사용이 불편하고 느림
-
-* int를 사용해 해결해버자
+* #### int를 사용해 해결해버자
 
   ```
-  public static void howManyCandies3() {
     int itemsBought = 0;
     int funds = 100;
     for(int price=10; funds >= price; price+=10) {
@@ -78,8 +69,6 @@
 
   * long과 int 둘 중 하나를 사용할 수 있는데 수의 크기, 소숫점 이하 몇 자리 표현인지에 따라 결정
 
-
-
 #### 정리를 하면,
 
 * 정확한 답 요구하는 문제 풀 때는 float이나 double을 쓰면 안되요
@@ -89,8 +78,6 @@
 * 성능이 중요하고, 소수점 아래 수를 직접 관리해도 되고. 계산할 수가 심하게 크지 않으면 int나 long을 사용한다.
 
 * 10진수 9개 이하 표현 가능은 int, 18개 이하로 표현 가능은 long, 그 이상은 BigDecimal을 사용해야 한다.
-
-
 
 #### 참고,,
 
@@ -125,8 +112,5 @@ boolean
  true, false
 ```
 
-
-
-  
 
 

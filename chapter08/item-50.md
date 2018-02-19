@@ -11,6 +11,7 @@
   * 숫자라면 int, float, BigInteger 같은 수 자료형으로 변환
 
   * 예, 아니오 질문의 답은 boolean으로 변환
+
   * 적절한 값 자료형이 있다면 해당 자료형을 사용
 
 * **문자열을 enum 자료형을 대신하기에는 부족**
@@ -28,7 +29,7 @@ String compoundKey = className + "#" + i.next();
 
 #### **문자열은 권한 \(capablity\)을 표현하기에 부족**
 
-* **문자열을 권한으로 사용하는 잘못된 예**
+* **문자열을 권한으로 사용하는 잘못된 예\(쓰레드 지역변수 기능을 설계하는 경우\)**
 
 ```
 public class ThreadLocal {

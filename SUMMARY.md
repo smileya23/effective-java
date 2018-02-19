@@ -50,4 +50,5 @@
   * [Item 48](chapter08/item-48.md)
   * [Item 49](chapter08/item-49.md)
   * [Item 50](chapter08/item-50.md)
+  * [Item 51](chapter08/item-51.md)
 

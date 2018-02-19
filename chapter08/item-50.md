@@ -31,6 +31,9 @@ String compoundKey = className + "#" + i.next();
 
 * **문자열을 권한으로 사용하는 잘못된 예\(쓰레드 지역변수 기능을 설계하는 경우\)**
 
+* * 문자열이 스레드 지역변수의 전역적 이름공간, 클라이언트가 제공하는 문자열 키의 유일성이 보장되어야 함
+  * 악의적 클라이언트가 다른 클라이언트와 같은 문자열 사용시 다른 클라이언트의 데이터 접근 가능
+
 ```
 public class ThreadLocal {
     private ThreadLocal(){} //객체 생성 불가
@@ -39,26 +42,22 @@ public class ThreadLocal {
 }
 ```
 
-* 문자열이 스레드 지역변수의 전역적 이름공간, 클라이언트가 제공하는 문자열 키의 유일성이 보장되어야함
-
-* 악의적 클라이언트가 다른 클라이언트와 같은 문자열 사용시 다른 클라이언트의 데이터 접근 가능
-
 * **문자열 대신 위조 불가능\(unforgeable\) 키로 바꾸면 해결\(이런 키를 권한 capability라고 부름\)**
 
-  ```
-  public class ThreadLocal {
-      private ThreadLocal() {} //객체생성불가
+```
+public class ThreadLocal {
+    private ThreadLocal() {} //객체생성불가
 
-      public static class Key { //권한
-          Key() { }
-      }
-      public static Key getKey() {//유일성이 보장되는, 위조 불가능 키를 생성
-          return new Key();
-      }
-      public static void set(String key, Object value) {}
-      public static void get(String key) {}
-  }
-  ```
+    public static class Key { //권한
+        Key() { }
+    }
+    public static Key getKey() {//유일성이 보장되는, 위조 불가능 키를 생성
+        return new Key();
+    }
+    public static void set(String key, Object value) {}
+    public static void get(String key) {}
+}
+```
 
 * 정적 메서드를 없애고, 키의 메서드로 바꿈, 키를 지역 변수의 키가 아니라 스레드 지역변수로 고침
 

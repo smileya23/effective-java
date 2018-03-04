@@ -56,5 +56,5 @@
   * [Item 54](chapter08/item-54.md)
   * [Item 55](chapter08/item-55.md)
   * [Item 56](chapter08/item-56.md)
-* CHAPTER 09
+* [CHAPTER 09](chapter-09.md)
 

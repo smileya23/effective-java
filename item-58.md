@@ -1,4 +1,4 @@
-## CHAPTER 09. 예
+## CHAPTER 09. 예외
 
 
 
